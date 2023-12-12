@@ -17,10 +17,6 @@ public:
 
     Graph() : G({}), numEdges(0) {}
 
-    Graph(Graph<VertexElement,EdgeDistance,N>& other) : G({}), numEdges(0) {
-        vertexElements = other.vertexElements;
-    }
-
     void insertVertex(int v, const VertexElement& element) {
         vertexElements[v] = element;
     }
